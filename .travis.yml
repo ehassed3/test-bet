@@ -13,7 +13,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $test-bet
+  github_token: $testbet
   local_dir: build
   on:
     branch: master
