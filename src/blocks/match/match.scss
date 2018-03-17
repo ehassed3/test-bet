@@ -24,6 +24,7 @@
 .match__info {
   counter-increment: planitems;
   display: flex;
+  flex-wrap: wrap;
 
   &::before {
     color: $datetime-font-color;
@@ -60,6 +61,7 @@
 .match__name {
   display: inline-block;
   letter-spacing: -.7px;
+  word-wrap: break-word;
   margin: 0;
 }
 

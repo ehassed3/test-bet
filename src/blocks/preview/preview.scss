@@ -3,11 +3,13 @@
   border-top: 3px solid $head-border-top-color;
   box-shadow: inset 0px -5px 0px $shadow-mask-color;
   box-sizing: border-box;
-  height: 140px;
   margin-bottom: 5px;
   outline-offset: -1px;
   outline: 1px solid $head-border-top-color;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
   position: relative;
 
   &::before {
