@@ -1,0 +1,15 @@
+extends pug/layout.pug
+
+block preload
+  +fonts("Direct")
+
+block title
+  title Ставки
+
+block header
+  +page-header
+
+block main
+  +page-main
+    +preview
+    +draw

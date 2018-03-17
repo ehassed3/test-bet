@@ -1,0 +1,6 @@
+mixin group(draw)
+  each group in draw.groups
+    .draw__group.group
+      .group__info(class="group__info--" + group.type)
+        h3.group__name= group.name
+      +match(group)

@@ -1,0 +1,9 @@
+.page {
+  background-color: $page-background-color;
+  color: $page-font-color;
+  font-family: $main-font;
+  font-size: $font-size-small;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  width: 750px;
+}

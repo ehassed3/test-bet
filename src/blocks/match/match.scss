@@ -1,0 +1,114 @@
+.match {
+  background-color: $match-background-color;
+  border-radius: 7px;
+  border: 1px solid $big-group-border-color;
+  box-shadow: inset 0 4px 1px rgba(150, 150, 150, .4);
+  padding-bottom: 22px;
+  padding-left: 60px;
+  padding-right: 65px;
+  padding-top: 23px;
+  position: relative;
+
+  &::after {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    bottom: 0px;
+    content: "";
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.match__info {
+  counter-increment: planitems;
+  display: flex;
+
+  &::before {
+    color: $datetime-font-color;
+    content: counter(planitems) ".";
+    left: 16px;
+    position: absolute;
+  }
+}
+
+.match__datetime,
+.match__result {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 151px;
+}
+
+.match__datetime {
+  color: $datetime-font-color;
+}
+
+.match__result {
+  color: $result-font-color;
+}
+
+.match__date,
+.match__score,
+.match__time,
+.match__match-time {
+  margin: 0;
+}
+
+.match__name {
+  display: inline-block;
+  letter-spacing: -.7px;
+  margin: 0;
+}
+
+.match__buttons {
+  display: flex;
+  margin-top: 21px;
+  position: relative;
+
+  &::after {
+    background-color: $button-active-background-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: $match-background-color;
+    content: "i";
+    font-size: 17px;
+    font-weight: 600;
+    height: 27px;
+    padding-top: 4px;
+    position: absolute;
+    right: -46px;
+    text-align: center;
+    top: calc(50% - 16px);
+    width: 27px;
+  }
+}
+
+.match__button {
+  background: none;
+  border-left: 4px solid $button-border-color;
+  border-top: 4px solid $button-border-color;
+  color: $button-font-color;
+  flex-grow: 1;
+  outline-offset: -1px;
+  outline: 1px solid $big-group-border-color;
+  padding-bottom: 17px;
+  padding-top: 18px;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    background: $page-background-color;
+    border-left: 4px solid transparent;
+    border-top: 4px solid transparent;
+    color: $page-font-color;
+    outline-offset: -2px;
+    outline: 2px solid $button-active-outline-color;
+  }
+
+  &:active {
+    opacity: .7;
+  }
+}

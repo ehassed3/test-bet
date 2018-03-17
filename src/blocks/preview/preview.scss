@@ -1,0 +1,36 @@
+.preview {
+  background-color: $preview-mask-color;
+  border-top: 3px solid $head-border-top-color;
+  box-shadow: inset 0px -5px 0px $shadow-mask-color;
+  box-sizing: border-box;
+  height: 140px;
+  margin-bottom: 5px;
+  outline-offset: -1px;
+  outline: 1px solid $head-border-top-color;
+  padding: 20px 0;
+  position: relative;
+
+  &::before {
+    background-image: url("../img/content/preview.jpg");
+    background-position: 99% 2%;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.preview__jackpot,
+.preview__pool {
+  font-size: $font-size-big;
+  letter-spacing: -0.7px;
+  margin: 0;
+  text-align: center;
+}
+
+.preview__jackpot {
+  margin-bottom: 10px;
+}

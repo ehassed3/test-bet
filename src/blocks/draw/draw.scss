@@ -1,0 +1,49 @@
+.draw__list {
+  @include list-style-none;
+  counter-reset: planitems;
+}
+
+.draw__item {
+  margin-bottom: 10px;
+}
+
+.draw__info {
+  align-items: center;
+  background-color: $draw-background-color;
+  border-top: 3px solid $head-border-top-color;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: -.4px;
+  outline-offset: -1px;
+  outline: 1px solid $draw-outline-color;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  position: relative;
+
+  &::after {
+    border-bottom: 3px solid $arrow-color;
+    border-right: 3px solid $arrow-color;
+    content: "";
+    height: 25px;
+    position: absolute;
+    right: 32px;
+    top: 13px;
+    transform: rotate(45deg);
+    width: 25px;
+  }
+}
+
+.draw__number {
+  color: $draw-font-color;
+  font-size: $font-size-normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.draw__datetime {
+  margin-bottom: 0;
+  margin-right: 70px;
+  margin-top: 0;
+}

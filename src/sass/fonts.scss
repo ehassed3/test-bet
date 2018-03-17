@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Direct";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Direct Regular"),
+  local("Direct-Regular"),
+  url("../fonts/Direct-Regular.woff2") format("woff2"),
+  url("../fonts/Direct-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Direct";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Direct Bold"),
+  local("Direct-Bold"),
+  url("../fonts/Direct-Bold.woff2") format("woff2"),
+  url("../fonts/Direct-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Direct";
+  font-style: italic;
+  src: local("Direct Italic"),
+  local("Direct-Italic"),
+  url("../fonts/Direct-Italic.woff2") format("woff2"),
+  url("../fonts/Direct-Italic.woff") format("woff");
+  font-display: swap;
+}

@@ -1,0 +1,18 @@
+mixin match(group)
+  if group.matches
+    each match in group.matches
+      .group__match.match
+        .match__info
+          if match.date && match.time
+            .match__datetime
+              p.match__date= match.date
+              p.match__time= match.time
+          else if match.score && match.matchTime
+            .match__result
+              p.match__score= match.score
+              p.match__match-time= match.matchTime
+          p.match__name= match.name
+        .match__buttons
+          button.match__button 1
+          button.match__button X
+          button.match__button 2

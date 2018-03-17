@@ -1,0 +1,59 @@
+mixin draw
+  section.page-main__draw.draw
+    ul.draw__list
+      -
+        const draws = [
+          {
+            drawNumber: 'Тираж № 1301',
+            date: '25.02.2018',
+            time: '18:00',
+            groups: [
+              {
+                name: 'Чемпионат Греции. Суперлига',
+                type: 'football',
+                matches: [
+                  {
+                    date: '25.02.',
+                    time: '18:30',
+                    name: 'Манчестер Юнайтед - Манчестер Сити'
+                  },
+
+                  {
+                    date: '25.02.',
+                    time: '20:00',
+                    name: 'Арсенал - Спартак Москва'
+                  }
+                ]
+              },
+
+              {
+                name: 'Турция. Кубок',
+                type: 'football',
+                matches: [
+                  {
+                    date: '25.02.',
+                    time: '15:30',
+                    name: 'Кайсериспор - Аркхисар Беледье'
+                  },
+
+                  {
+                    score: '6:0',
+                    matchTime: '2т 88\'',
+                    name: 'Фенербахче - Гиресунспор'
+                  }
+                ]
+              },
+
+              {
+                name: 'NHL',
+                type: 'hockey'
+              }
+            ]
+          }
+        ]
+      each draw in draws
+        li.draw__item
+          .draw__info
+            h2.draw__number= draw.drawNumber
+            p.draw__datetime= "Приём ставок до: " + draw.date + " " + draw.time
+          +group(draw)

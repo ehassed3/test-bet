@@ -1,0 +1,40 @@
+.page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.page-header__img {
+  display: block;
+  height: 32px;
+  width: 200px;
+}
+
+.page-header__user {
+  color: $header-font-color;
+  display: flex;
+  letter-spacing: -.7px;
+}
+
+.page-header__name {
+  font-size: $font-size-normal;
+  font-style: italic;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.page-header__account {
+  margin: 0;
+  text-align: right;
+}
+
+.page-header__avatar {
+  background-image: url("../img/icons/avatar.svg");
+  background-repeat: no-repeat;
+  fill: $header-font-color;
+  height: 60px;
+  margin-left: 11px;
+  margin-top: 5px;
+  width: 60px;
+}
+

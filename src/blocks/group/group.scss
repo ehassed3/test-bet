@@ -1,0 +1,54 @@
+.group__info {
+  border-radius: 7px;
+  border: 1px solid $big-group-border-color;
+  box-shadow: inset 0 4px 1px rgba(210, 210, 210, .3);
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  position: relative;
+
+  &::before {
+    background-repeat: no-repeat;
+    content: "";
+    height: 40px;
+    left: 10px;
+    position: absolute;
+    width: 50px;
+  }
+
+  &::after {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    bottom: 0px;
+    content: "";
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  &--football {
+    background-color: $group-football-background-color;
+
+    &::before {
+      background-image: url("../img/content/football.png");
+    }
+  }
+
+  &--hockey {
+    background-color: $group-hockey-background-color;
+
+    &::before {
+      background-image: url("../img/content/hockey.png");
+    }
+  }
+}
+
+.group__name {
+  color: $group-name-font-color;
+  font-weight: 700;
+  letter-spacing: .4px;
+  margin: 0;
+  padding-left: 43px;
+}
